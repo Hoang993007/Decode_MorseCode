@@ -4,9 +4,9 @@
 #define morseCodeLength 10
 #define characterLength 6//max length is 5 and one slot for storing '\0' -  the end of the string
 
-//NOTE: ở file đầu vào, kết thúc mỗi từ bắt buộc phải có ' ', ko đc bỏ bớt, bỏ bớt sễ ko nhận điện đc. Đặc biệt là cuối dòng thường quên viết ' ' mà thêm vào luôn là '\n'
-//NOTE: file đầu ra mình cũng làm y như nguyên tắc trên, luôn có ' '
-//NOTE: sau dấu '/' luôn là 1 dấu ' '
+//NOTE 1: ở file đầu vào, kết thúc mỗi từ bắt buộc phải có ' ', ko đc bỏ bớt, bỏ bớt sễ ko nhận điện đc. Đặc biệt là cuối dòng thường quên viết ' ' mà thêm vào luôn là '\n'// FIXED - NO PROBLEM - NEEDN'T
+//NOTE 2: file đầu ra mình cũng làm y như nguyên tắc trên, luôn có ' '// FIXED - NO PROBLEM - NEEDN'T
+//NOTE 3: sau dấu '/' luôn là 1 dấu ' '// FIXED - NO PROBLEM - NEEDN'T
 
 enum inputFileType{MorseCode, Text};
   
