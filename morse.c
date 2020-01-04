@@ -37,7 +37,7 @@ int main(int argc, char *argv[]){
   
   //CHECK OUTPUT FILE EXISTS OR NOT
   FILE *outputFile;
-  if((outputFile=fopen(argv[2],"r"))!=NULL){
+  if((outputFile=fopen(argv[2],"r"))!=NULL){//OPEN TO READ - THE FILE MUST EXISTS
     char checkYN;
     printf("\nWarning: %s already exists. Do you wish to overwrite (y/n)?: ", argv[2]);
     checkYN=getchar();
@@ -45,7 +45,7 @@ int main(int argc, char *argv[]){
     if(checkYN=='n') return 0;
     }
   fclose(outputFile);
-  outputFile=fopen(argv[2],"w");//REOPEN TO WRITE
+  outputFile=fopen(argv[2],"w");//CREATE A NEW ONE IF DOES NOT EXISTS OR REOPEN TO WRITE - DELETE ALL DATA
 
   
   //READ FILE morseCode.txt CONSIST OF MORSE CODE
